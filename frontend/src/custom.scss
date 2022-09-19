@@ -59,3 +59,12 @@ body {
 .user-info {
   min-width: 800px;
 }
+
+#search-box {
+  outline: 0 !important;
+  box-shadow: none;
+
+  &+span .input-group-text {
+    color: $light;
+  }
+}

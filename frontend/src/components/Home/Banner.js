@@ -7,12 +7,14 @@ const Banner = () => {
       <div className="container p-4 text-center">
         <img src={logo} alt="banner" />
         <form className="form-inline justify-content-center">
-          <span id="get-part">A place to get </span>
-          <div className="form-group">
-            <input id="search-box" type="text" className="form-control" placeholder="What is it that you truly desire?" ></input>
-            <i className="ion-search"></i>
-          </div>
-          <span> the cool stuff.</span>
+          <span id="get-part">A place to get</span>
+             <div class="input-group col-4">
+                <input id="search-box"  class="form-control py-2 border-right-0 border" type="search" placeholder="What is it that you truly desire?" />
+                <span class="input-group-append">
+                    <div class="input-group-text bg-white"><i class="ion-search"></i></div>
+                </span>
+            </div>
+          <span>the cool stuff.</span>
         </form>
       </div>
     </div>
