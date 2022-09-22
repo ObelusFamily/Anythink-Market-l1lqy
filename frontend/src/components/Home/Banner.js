@@ -14,11 +14,14 @@ const Banner = (props) => {
                     className="form-control py-2 border-right-0 border" 
                     type="search" 
                     placeholder="What is it that you truly desire?" 
-                    onChange={ (e) => 
-                      props.onItemsFilter(
-                        e.target.value,
-                        (page) => agent.Items.filterBy(e.target.value, page),
-                        agent.Items.filterBy(e.target.value) ) 
+                    onChange={ (e) => {
+                        if (e.target.value.length >= 3) {
+                          props.onItemsFilter(
+                            e.target.value,
+                            (page) => agent.Items.filterBy(e.target.value, page),
+                            agent.Items.filterBy(e.target.value) ) 
+                        }
+                      }
                     } />
                 <span className="input-group-append">
                     <div className="input-group-text bg-white"><i className="ion-search"></i></div>
