@@ -9,24 +9,28 @@ const Banner = (props) => {
         <img src={logo} alt="banner" />
         <form className="form-inline justify-content-center">
           <span id="get-part">A place to get</span>
-             <div className="input-group col-4">
-                <input id="search-box"  
-                    className="form-control py-2 border-right-0 border" 
-                    type="search" 
-                    placeholder="What is it that you truly desire?" 
-                    onChange={ (e) => {
-                        if (e.target.value.length >= 3) {
-                          props.onItemsFilter(
-                            e.target.value,
-                            (page) => agent.Items.filterBy(e.target.value, page),
-                            agent.Items.filterBy(e.target.value) ) 
-                        }
-                      }
-                    } />
-                <span className="input-group-append">
-                    <div className="input-group-text bg-white"><i className="ion-search"></i></div>
-                </span>
-            </div>
+          <div className="input-group col-4">
+            <input
+              id="search-box"
+              className="form-control py-2 border-right-0 border"
+              type="search"
+              placeholder="What is it that you truly desire?"
+              onChange={(e) => {
+                if (e.target.value.length >= 3) {
+                  props.onItemsFilter(
+                    e.target.value,
+                    (page) => agent.Items.filterBy(e.target.value, page),
+                    agent.Items.filterBy(e.target.value)
+                  );
+                }
+              }}
+            />
+            <span className="input-group-append">
+              <div className="input-group-text bg-white">
+                <i className="ion-search"></i>
+              </div>
+            </span>
+          </div>
           <span>the cool stuff.</span>
         </form>
       </div>

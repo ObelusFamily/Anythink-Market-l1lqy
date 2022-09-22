@@ -64,7 +64,7 @@ body {
   outline: 0 !important;
   box-shadow: none;
 
-  &+span .input-group-text {
+  & + span .input-group-text {
     color: $light;
   }
 }
