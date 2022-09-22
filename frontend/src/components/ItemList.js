@@ -9,9 +9,8 @@ const ItemList = (props) => {
 
   if (props.searchKeyword?.length > 0) {
     return (
-      <div className="d-flex justify-content-center">
+      <div id="empty" className="d-flex justify-content-center">
         <div
-          id="empty"
           className="text-center col-4 py-5 mt-4"
           style={{ backgroundColor: "#FFFFFF4d" }}
         >
