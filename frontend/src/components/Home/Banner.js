@@ -9,9 +9,9 @@ const Banner = (props) => {
       <div className="container p-4 text-center">
         <img src={logo} alt="banner" style={{ height: "0px" }} />
         <form className="form-inline justify-content-center">
-          <span id="get-part">
+          <span>
             A place to{" "}
-            <span onClick={() => setShowSearchBar(!showSearchBar)}>get</span>
+            <span id="get-part" onClick={() => setShowSearchBar(!showSearchBar)}>get</span>
           </span>
           <SearchBar show={showSearchBar} onItemsFilter={props.onItemsFilter} />
           <span>the cool stuff.</span>
