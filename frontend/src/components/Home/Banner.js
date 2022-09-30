@@ -11,7 +11,12 @@ const Banner = (props) => {
         <form className="form-inline justify-content-center">
           <span>
             A place to{" "}
-            <span id="get-part" onClick={() => setShowSearchBar(!showSearchBar)}>get</span>
+            <span
+              id="get-part"
+              onClick={() => setShowSearchBar(!showSearchBar)}
+            >
+              get
+            </span>
           </span>
           <SearchBar show={showSearchBar} onItemsFilter={props.onItemsFilter} />
           <span>the cool stuff.</span>
