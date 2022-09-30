@@ -4,9 +4,9 @@ import agent from "../../agent";
 
 const Banner = (props) => {
   return (
-    <div className="banner text-white" >
+    <div className="banner text-white">
       <div className="container p-4 text-center">
-        <img src={logo} alt="banner" style={{height: '0px'}}/>
+        <img src={logo} alt="banner" style={{ height: "0px" }} />
         <form className="form-inline justify-content-center">
           <span id="get-part">A place to get</span>
           <div className="input-group col-4">
